@@ -62,7 +62,6 @@
                     </view>
                     <connections>
                         <outlet property="imgBall" destination="bUn-ft-0bz" id="aPE-MS-EMZ"/>
-                        <outlet property="slBar" destination="5Y8-zi-xiJ" id="Xji-x8-JMg"/>
                         <outlet property="viTopView" destination="YBk-hu-TJI" id="nIB-6y-f8Y"/>
                     </connections>
                 </viewController>

@@ -13,8 +13,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var viTopView: UIView!
     
     @IBAction func slBar(_ sender: UISlider) {
-        let currentValue = CGFloat(sender.value)
-        let xPosition = currentValue * viTopView.frame.width
+        let currentValue = sender.value
+        let xPosition = CGFloat(currentValue) * viTopView.bounds.width
         
         imgBall.frame = CGRect(x: xPosition, y: imgBall.frame.origin.y, width: imgBall.frame.size.width, height: imgBall.frame.size.height)
     }
