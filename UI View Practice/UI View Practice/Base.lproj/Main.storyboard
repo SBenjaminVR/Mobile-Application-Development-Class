@@ -34,6 +34,9 @@
                                             <segment title="Izquierda"/>
                                             <segment title="Derecha"/>
                                         </segments>
+                                        <connections>
+                                            <action selector="animarLetrero:" destination="BYZ-38-t0r" eventType="valueChanged" id="434-b8-KJU"/>
+                                        </connections>
                                     </segmentedControl>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -62,6 +65,8 @@
                     </view>
                     <connections>
                         <outlet property="imgBall" destination="bUn-ft-0bz" id="aPE-MS-EMZ"/>
+                        <outlet property="tfRana" destination="ysd-as-zPD" id="LX6-W5-se5"/>
+                        <outlet property="viBottomView" destination="d8d-nl-xrD" id="Abz-JH-Ynn"/>
                         <outlet property="viTopView" destination="YBk-hu-TJI" id="nIB-6y-f8Y"/>
                     </connections>
                 </viewController>
