@@ -45,6 +45,9 @@
                                     <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="5Y8-zi-xiJ">
                                         <rect key="frame" x="-2" y="97" width="378" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="slBar:" destination="BYZ-38-t0r" eventType="valueChanged" id="FoI-dj-2oO"/>
+                                        </connections>
                                     </slider>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="soccerball" translatesAutoresizingMaskIntoConstraints="NO" id="bUn-ft-0bz">
                                         <rect key="frame" x="143" y="150" width="89" height="86"/>
@@ -57,6 +60,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="imgBall" destination="bUn-ft-0bz" id="aPE-MS-EMZ"/>
+                        <outlet property="slBar" destination="5Y8-zi-xiJ" id="Xji-x8-JMg"/>
+                        <outlet property="viTopView" destination="YBk-hu-TJI" id="nIB-6y-f8Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
