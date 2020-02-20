@@ -15,24 +15,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4rz-47-9TF">
-                                <rect key="frame" x="40" y="54" width="335" height="335"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4rz-47-9TF" userLabel="View blue">
+                                <rect key="frame" x="52" y="128" width="310.5" height="269"/>
                                 <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWm-Qf-jvJ">
-                                <rect key="frame" x="167" y="467" width="72" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWm-Qf-jvJ">
+                                <rect key="frame" x="171" y="427" width="72" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jBR-Ge-C13">
-                                <rect key="frame" x="96" y="569" width="223" height="223"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jBR-Ge-C13" userLabel="View morado">
+                                <rect key="frame" x="140" y="499" width="134" height="134.5"/>
                                 <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jBR-Ge-C13" secondAttribute="height" multiplier="1:1" id="78a-Lb-wFQ"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="jBR-Ge-C13" firstAttribute="height" secondItem="4rz-47-9TF" secondAttribute="height" multiplier="0.5" id="1X4-7b-qC8"/>
+                            <constraint firstItem="lWm-Qf-jvJ" firstAttribute="top" secondItem="4rz-47-9TF" secondAttribute="bottom" constant="30" id="57r-Fp-1Zc"/>
+                            <constraint firstItem="4rz-47-9TF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CGa-ka-PfX"/>
+                            <constraint firstItem="lWm-Qf-jvJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CgZ-eJ-3oT"/>
+                            <constraint firstItem="4rz-47-9TF" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.75" id="NEc-P4-Vnk"/>
+                            <constraint firstItem="4rz-47-9TF" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="OQz-cn-UKf"/>
+                            <constraint firstItem="lWm-Qf-jvJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="enq-ml-j4N"/>
+                            <constraint firstItem="jBR-Ge-C13" firstAttribute="top" secondItem="lWm-Qf-jvJ" secondAttribute="bottom" constant="30" id="mX2-6q-PLj"/>
+                            <constraint firstItem="jBR-Ge-C13" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zN2-es-nl1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
