@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  Calendar swipe
 //
-//  Created by Fabiola Valdez on 2/22/20.
+//  Created by Benjamin Valdez on 2/22/20.
 //
 
 import UIKit

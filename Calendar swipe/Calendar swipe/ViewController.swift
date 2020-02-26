@@ -15,70 +15,46 @@ class ViewController: UIViewController {
     @IBOutlet weak var lbDia: UILabel!
     
     var fecha = Date()
+    var dia = " ", mes = " ", anio = " ", numero = " "
     let formato: DateFormatter = DateFormatter()
     
-    func llenarLabels(dia: String, mes: String, anio: String, numero: String ) {
+    func llenarLabels() -> Void {
         lbAnio.text = anio;
         lbMes.text = mes;
         lbNumero.text = numero;
         lbDia.text = dia;
     }
     
-    func obtenerFecha(dia: inout String, mes: inout String, anio: inout String, numero: inout String, fecha: String) {
-        var bDia = false, bMes = false, bNumero = false, primerEspacio = false, segundoEspacio = false;
+    func obtenerFecha() -> Void {
+        formato.dateFormat = "EEEE"
+        dia = formato.string(from: fecha)
+        formato.dateFormat = "dd"
+        numero = formato.string(from: fecha)
+        formato.dateFormat = "MMMM"
+        mes = formato.string(from: fecha)
+        formato.dateFormat = "y"
+        anio = formato.string(from: fecha)
         
-        for character in fecha {
-            if character != "," {
-               if !bDia && character != " " {
-                    dia += String(character)
-                }
-               else {
-                    bDia = true
-                    if !bMes && character != " " {
-                        mes += String(character)
-                    }
-                    else {
-                        if (!primerEspacio) {
-                            primerEspacio = true
-                            continue
-                        }
-                        bMes = true
-                        if !bNumero && character != " " {
-                            numero += String(character)
-                        }
-                        else {
-                            if (!segundoEspacio) {
-                                segundoEspacio = true
-                                continue
-                            }
-                            bNumero = true
-                            anio += String(character)
-                        }
-                    }
-                }
-            }
-        }
     }
     
     
     @IBAction func swipeRight(_ sender: UISwipeGestureRecognizer) {
-        
+        fecha.addTimeInterval(86400)
+        obtenerFecha()
+        llenarLabels()
     }
     
+    @IBAction func swipeLeft(_ sender: UISwipeGestureRecognizer) {
+        fecha.addTimeInterval(-86400)
+        obtenerFecha()
+        llenarLabels()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        formato.dateStyle = DateFormatter.Style.full
-        let fechaEnString = formato.string(from: fecha)
-        
-        formato.dateFormat = "EEE"
-        var dia = formato.string(from: fecha),
-        mes = " ", anio = " ", numero = " "
-        
-        /*
-        obtenerFecha(dia: &dia, mes: &mes, anio: &anio, numero: &numero, fecha: fechaEnString)
- */
-        llenarLabels(dia: dia, mes: mes, anio: anio, numero: numero)
+        fecha = fecha.addingTimeInterval(-86400 * 46)
+        obtenerFecha()
+        llenarLabels()
     }
 
 

@@ -56,6 +56,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="PBH-jV-0wX" appends="YES" id="gDQ-jA-gde"/>
+                            <outletCollection property="gestureRecognizers" destination="AWl-0O-lZb" appends="YES" id="h9w-m5-3Tf"/>
                         </connections>
                     </view>
                     <connections>
@@ -68,7 +69,12 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="PBH-jV-0wX">
                     <connections>
-                        <action selector="swipeRight:" destination="BYZ-38-t0r" id="zPQ-qk-qsf"/>
+                        <action selector="swipeRight:" destination="BYZ-38-t0r" id="tzX-1z-neU"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="AWl-0O-lZb">
+                    <connections>
+                        <action selector="swipeLeft:" destination="BYZ-38-t0r" id="bZu-LN-Ll7"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
