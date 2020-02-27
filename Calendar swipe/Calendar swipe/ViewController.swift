@@ -52,7 +52,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        fecha = fecha.addingTimeInterval(-86400 * 46)
         obtenerFecha()
         llenarLabels()
     }
