@@ -19,7 +19,7 @@
                                 <rect key="frame" x="33" y="30" width="309" height="212"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wNX-yn-7Aa">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wNX-yn-7Aa">
                                 <rect key="frame" x="33" y="323" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -39,7 +39,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Esfera"/>
                                 <connections>
-                                    <segue destination="OYg-C4-O0Q" kind="presentation" id="lCc-4I-6rH"/>
+                                    <segue destination="OYg-C4-O0Q" kind="presentation" identifier="esfera" id="lCc-4I-6rH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PYJ-q1-XXk">
@@ -48,7 +48,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Prisma"/>
                                 <connections>
-                                    <segue destination="BMK-uq-afi" kind="presentation" id="Vyf-qx-dqW"/>
+                                    <segue destination="BMK-uq-afi" kind="presentation" identifier="prisma" id="Vyf-qx-dqW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9c-KI-8OL">
@@ -61,15 +61,20 @@
                         <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="imgFotoPrincipal" destination="jRU-He-oTA" id="rLw-VI-MCo"/>
+                        <outlet property="lbMedidas" destination="wNX-yn-7Aa" id="5BE-sc-YBq"/>
+                        <outlet property="lbVolumen" destination="1BQ-oF-R1z" id="HdE-Q3-o93"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138.40000000000001" y="114.69265367316342"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Esfera-->
         <scene sceneID="Qwg-Hk-YjA">
             <objects>
-                <viewController id="OYg-C4-O0Q" sceneMemberID="viewController">
+                <viewController id="OYg-C4-O0Q" customClass="ViewControllerEsfera" customModule="T3_Figuras_geometricas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dnG-mL-uJp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -101,15 +106,19 @@
                         <color key="backgroundColor" red="0.39571761697360364" green="0.89598376687709258" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="xu6-Bh-Y24"/>
                     </view>
+                    <connections>
+                        <outlet property="imgEsfera" destination="9B4-8k-nrz" id="1kE-df-Gge"/>
+                        <outlet property="tfRadio" destination="IAN-h2-LEV" id="y2e-1q-ZyT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9l1-4C-yYQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1133.5999999999999" y="8.5457271364317844"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Prisma-->
         <scene sceneID="HZt-y6-0jL">
             <objects>
-                <viewController id="BMK-uq-afi" sceneMemberID="viewController">
+                <viewController id="BMK-uq-afi" customClass="ViewControllerPrisma" customModule="T3_Figuras_geometricas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jcc-bM-MWV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  T3 Figuras geometricas
 //
-//  Created by Fabiola Valdez on 3/1/20.
+//  Created by Benjamín Valdez on 3/1/20.
 //
 
 import UIKit

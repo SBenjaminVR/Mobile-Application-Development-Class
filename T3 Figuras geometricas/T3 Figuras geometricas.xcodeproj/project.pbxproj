@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A52F2A6F240CA3B100264565 /* ViewControllerPrisma.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52F2A6E240CA3B100264565 /* ViewControllerPrisma.swift */; };
+		A52F2A71240CA3C000264565 /* ViewControllerEsfera.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52F2A70240CA3C000264565 /* ViewControllerEsfera.swift */; };
 		A54AFD43240C94DD00C7FBE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54AFD42240C94DD00C7FBE1 /* AppDelegate.swift */; };
 		A54AFD45240C94DD00C7FBE1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54AFD44240C94DD00C7FBE1 /* SceneDelegate.swift */; };
 		A54AFD47240C94DD00C7FBE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54AFD46240C94DD00C7FBE1 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A52F2A6E240CA3B100264565 /* ViewControllerPrisma.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPrisma.swift; sourceTree = "<group>"; };
+		A52F2A70240CA3C000264565 /* ViewControllerEsfera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerEsfera.swift; sourceTree = "<group>"; };
 		A54AFD3F240C94DD00C7FBE1 /* T3 Figuras geometricas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "T3 Figuras geometricas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A54AFD42240C94DD00C7FBE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A54AFD44240C94DD00C7FBE1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 				A54AFD44240C94DD00C7FBE1 /* SceneDelegate.swift */,
 				A54AFD46240C94DD00C7FBE1 /* ViewController.swift */,
 				A54AFD48240C94DD00C7FBE1 /* Main.storyboard */,
+				A52F2A6E240CA3B100264565 /* ViewControllerPrisma.swift */,
+				A52F2A70240CA3C000264565 /* ViewControllerEsfera.swift */,
 				A54AFD4B240C94DF00C7FBE1 /* Assets.xcassets */,
 				A54AFD4D240C94DF00C7FBE1 /* LaunchScreen.storyboard */,
 				A54AFD50240C94DF00C7FBE1 /* Info.plist */,
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A52F2A71240CA3C000264565 /* ViewControllerEsfera.swift in Sources */,
+				A52F2A6F240CA3B100264565 /* ViewControllerPrisma.swift in Sources */,
 				A54AFD47240C94DD00C7FBE1 /* ViewController.swift in Sources */,
 				A54AFD43240C94DD00C7FBE1 /* AppDelegate.swift in Sources */,
 				A54AFD45240C94DD00C7FBE1 /* SceneDelegate.swift in Sources */,
