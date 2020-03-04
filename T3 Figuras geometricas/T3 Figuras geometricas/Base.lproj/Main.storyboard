@@ -187,6 +187,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Guardar"/>
+                                <connections>
+                                    <segue destination="J3J-c9-r22" kind="unwind" unwindAction="unwindEditarWithUnwindSegue:" id="zD2-yX-vmP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.47875170710730885" green="1" blue="0.62095100876372444" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -204,6 +207,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XDy-bj-onO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="J3J-c9-r22" userLabel="Exit" sceneMemberID="exit"/>
                 <tapGestureRecognizer id="jgE-LJ-N6G">
                     <connections>
                         <action selector="quitarTeclado:" destination="BMK-uq-afi" id="MA7-re-yVh"/>

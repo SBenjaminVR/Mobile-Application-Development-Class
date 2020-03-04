@@ -15,6 +15,9 @@ class ViewController: UIViewController {
     
     var fotoPrincipal: UIImage!
     var medidas: CGFloat?
+    var largo: CGFloat?
+    var ancho: CGFloat?
+    var altura: CGFloat?
     var volumen: CGFloat?
     
     
@@ -34,12 +37,13 @@ class ViewController: UIViewController {
     
     @IBAction func unwindEditar(unwindSegue: UIStoryboardSegue) {
         imgFotoPrincipal.image = fotoPrincipal;
+        lbVolumen.text = String(describing: volumen!)
         if unwindSegue.source is ViewControllerPrisma {
-            
+            lbMedidas.text = "Largo = " + String(describing: largo!) + "\nAncho = " + String(describing: ancho!) +
+            "\nAltura = " + String(describing: altura!)
         }
         else if unwindSegue.source is ViewControllerEsfera {
             lbMedidas.text = "Radio = " + String(describing: medidas!)
-            lbVolumen.text = String(describing: volumen!)
         }
     }
 
