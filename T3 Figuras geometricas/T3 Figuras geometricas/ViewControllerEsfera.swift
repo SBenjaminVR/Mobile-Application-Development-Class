@@ -12,6 +12,10 @@ class ViewControllerEsfera: UIViewController {
     @IBOutlet weak var imgEsfera: UIImageView!
     @IBOutlet weak var tfRadio: UITextField!
     
+    @IBAction func quitarTeclado(_ sender: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,7 +24,7 @@ class ViewControllerEsfera: UIViewController {
     
     // MARK: - Navigation
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        if let radio = Double (tfRadio.text!) {
+        if Double (tfRadio.text!) == nil {
             let alerta = UIAlertController(title: "Error", message: "Los campos deben tener datos numéricos", preferredStyle: .alert)
             let accion = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
             alerta.addAction(accion)

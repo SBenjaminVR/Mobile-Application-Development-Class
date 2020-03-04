@@ -17,17 +17,30 @@ class ViewController: UIViewController {
     var medidas: CGFloat?
     var volumen: CGFloat?
     
+    
+    @IBAction func borrarDatos(_ sender: Any) {
+        imgFotoPrincipal.image = nil;
+        lbMedidas.text = ""
+        lbVolumen.text = ""
+    }
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         imgFotoPrincipal.image = fotoPrincipal;
-        lbMedidas.text = String(describing: medidas!)
-        lbVolumen.text = String(describing: volumen!)
+        lbMedidas.text = ""
+        lbVolumen.text = ""
     }
     
     @IBAction func unwindEditar(unwindSegue: UIStoryboardSegue) {
-        lbMedidas.text = String(describing: medidas!)
-        lbVolumen.text = String(describing: volumen!)
+        imgFotoPrincipal.image = fotoPrincipal;
+        if unwindSegue.source is ViewControllerPrisma {
+            
+        }
+        else if unwindSegue.source is ViewControllerEsfera {
+            lbMedidas.text = "Radio = " + String(describing: medidas!)
+            lbVolumen.text = String(describing: volumen!)
+        }
     }
 
 }

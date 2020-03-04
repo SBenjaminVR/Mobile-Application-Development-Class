@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A535F90C240D5BBB00657E26 /* ViewControllerDetalle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A535F90B240D5BBB00657E26 /* ViewControllerDetalle.swift */; };
 		A5BCF27B240D53B200E49773 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BCF27A240D53B200E49773 /* AppDelegate.swift */; };
 		A5BCF27D240D53B200E49773 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BCF27C240D53B200E49773 /* SceneDelegate.swift */; };
 		A5BCF27F240D53B200E49773 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BCF27E240D53B200E49773 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A535F90B240D5BBB00657E26 /* ViewControllerDetalle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDetalle.swift; sourceTree = "<group>"; };
 		A5BCF277240D53B200E49773 /* tableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5BCF27A240D53B200E49773 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5BCF27C240D53B200E49773 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				A5BCF27C240D53B200E49773 /* SceneDelegate.swift */,
 				A5BCF27E240D53B200E49773 /* ViewController.swift */,
 				A5BCF280240D53B200E49773 /* Main.storyboard */,
+				A535F90B240D5BBB00657E26 /* ViewControllerDetalle.swift */,
 				A5BCF283240D53B400E49773 /* Assets.xcassets */,
 				A5BCF285240D53B400E49773 /* LaunchScreen.storyboard */,
 				A5BCF288240D53B400E49773 /* Info.plist */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A535F90C240D5BBB00657E26 /* ViewControllerDetalle.swift in Sources */,
 				A5BCF27F240D53B200E49773 /* ViewController.swift in Sources */,
 				A5BCF27B240D53B200E49773 /* AppDelegate.swift in Sources */,
 				A5BCF27D240D53B200E49773 /* SceneDelegate.swift in Sources */,

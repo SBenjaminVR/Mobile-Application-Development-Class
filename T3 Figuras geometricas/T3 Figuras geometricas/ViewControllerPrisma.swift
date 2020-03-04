@@ -9,6 +9,16 @@ import UIKit
 
 class ViewControllerPrisma: UIViewController {
 
+    @IBOutlet weak var imgPrisma: UIImageView!
+    @IBOutlet weak var tfLargo: UITextField!
+    @IBOutlet weak var tfAncho: UITextField!
+    @IBOutlet weak var tfAltura: UITextField!
+    
+    
+    @IBAction func quitarTeclado(_ sender: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,14 +26,10 @@ class ViewControllerPrisma: UIViewController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+
     }
-    */
 
 }
