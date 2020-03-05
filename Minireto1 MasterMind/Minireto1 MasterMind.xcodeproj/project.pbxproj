@@ -7,31 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A5DD8C1B241148950076702A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DD8C1A241148950076702A /* AppDelegate.swift */; };
-		A5DD8C1D241148950076702A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DD8C1C241148950076702A /* SceneDelegate.swift */; };
-		A5DD8C1F241148950076702A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DD8C1E241148950076702A /* ViewController.swift */; };
-		A5DD8C22241148950076702A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5DD8C20241148950076702A /* Main.storyboard */; };
-		A5DD8C24241148970076702A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5DD8C23241148970076702A /* Assets.xcassets */; };
-		A5DD8C27241148970076702A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5DD8C25241148970076702A /* LaunchScreen.storyboard */; };
-		A5DD8C2F241149240076702A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DD8C2E241149240076702A /* TableViewController.swift */; };
-		A5DD8C3124114C480076702A /* Jugador.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DD8C3024114C480076702A /* Jugador.swift */; };
+		A5DD8C3F241166160076702A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DD8C3E241166160076702A /* AppDelegate.swift */; };
+		A5DD8C41241166160076702A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DD8C40241166160076702A /* SceneDelegate.swift */; };
+		A5DD8C43241166160076702A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DD8C42241166160076702A /* ViewController.swift */; };
+		A5DD8C46241166160076702A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5DD8C44241166160076702A /* Main.storyboard */; };
+		A5DD8C48241166180076702A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5DD8C47241166180076702A /* Assets.xcassets */; };
+		A5DD8C4B241166180076702A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5DD8C49241166180076702A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A5DD8C17241148950076702A /* Actividad TableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Actividad TableView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A5DD8C1A241148950076702A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A5DD8C1C241148950076702A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A5DD8C1E241148950076702A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A5DD8C21241148950076702A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A5DD8C23241148970076702A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A5DD8C26241148970076702A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A5DD8C28241148970076702A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A5DD8C2E241149240076702A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		A5DD8C3024114C480076702A /* Jugador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jugador.swift; sourceTree = "<group>"; };
+		A5DD8C3B241166150076702A /* Minireto1 MasterMind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Minireto1 MasterMind.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5DD8C3E241166160076702A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A5DD8C40241166160076702A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A5DD8C42241166160076702A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A5DD8C45241166160076702A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A5DD8C47241166180076702A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5DD8C4A241166180076702A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A5DD8C4C241166180076702A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A5DD8C14241148950076702A /* Frameworks */ = {
+		A5DD8C38241166150076702A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,73 +37,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A5DD8C0E241148950076702A = {
+		A5DD8C32241166150076702A = {
 			isa = PBXGroup;
 			children = (
-				A5DD8C19241148950076702A /* Actividad TableView */,
-				A5DD8C18241148950076702A /* Products */,
+				A5DD8C3D241166160076702A /* Minireto1 MasterMind */,
+				A5DD8C3C241166160076702A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A5DD8C18241148950076702A /* Products */ = {
+		A5DD8C3C241166160076702A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A5DD8C17241148950076702A /* Actividad TableView.app */,
+				A5DD8C3B241166150076702A /* Minireto1 MasterMind.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A5DD8C19241148950076702A /* Actividad TableView */ = {
+		A5DD8C3D241166160076702A /* Minireto1 MasterMind */ = {
 			isa = PBXGroup;
 			children = (
-				A5DD8C1A241148950076702A /* AppDelegate.swift */,
-				A5DD8C1C241148950076702A /* SceneDelegate.swift */,
-				A5DD8C1E241148950076702A /* ViewController.swift */,
-				A5DD8C20241148950076702A /* Main.storyboard */,
-				A5DD8C2E241149240076702A /* TableViewController.swift */,
-				A5DD8C3024114C480076702A /* Jugador.swift */,
-				A5DD8C23241148970076702A /* Assets.xcassets */,
-				A5DD8C25241148970076702A /* LaunchScreen.storyboard */,
-				A5DD8C28241148970076702A /* Info.plist */,
+				A5DD8C3E241166160076702A /* AppDelegate.swift */,
+				A5DD8C40241166160076702A /* SceneDelegate.swift */,
+				A5DD8C42241166160076702A /* ViewController.swift */,
+				A5DD8C44241166160076702A /* Main.storyboard */,
+				A5DD8C47241166180076702A /* Assets.xcassets */,
+				A5DD8C49241166180076702A /* LaunchScreen.storyboard */,
+				A5DD8C4C241166180076702A /* Info.plist */,
 			);
-			path = "Actividad TableView";
+			path = "Minireto1 MasterMind";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A5DD8C16241148950076702A /* Actividad TableView */ = {
+		A5DD8C3A241166150076702A /* Minireto1 MasterMind */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A5DD8C2B241148970076702A /* Build configuration list for PBXNativeTarget "Actividad TableView" */;
+			buildConfigurationList = A5DD8C4F241166180076702A /* Build configuration list for PBXNativeTarget "Minireto1 MasterMind" */;
 			buildPhases = (
-				A5DD8C13241148950076702A /* Sources */,
-				A5DD8C14241148950076702A /* Frameworks */,
-				A5DD8C15241148950076702A /* Resources */,
+				A5DD8C37241166150076702A /* Sources */,
+				A5DD8C38241166150076702A /* Frameworks */,
+				A5DD8C39241166150076702A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Actividad TableView";
-			productName = "Actividad TableView";
-			productReference = A5DD8C17241148950076702A /* Actividad TableView.app */;
+			name = "Minireto1 MasterMind";
+			productName = "Minireto1 MasterMind";
+			productReference = A5DD8C3B241166150076702A /* Minireto1 MasterMind.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A5DD8C0F241148950076702A /* Project object */ = {
+		A5DD8C33241166150076702A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
 				TargetAttributes = {
-					A5DD8C16241148950076702A = {
+					A5DD8C3A241166150076702A = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
 			};
-			buildConfigurationList = A5DD8C12241148950076702A /* Build configuration list for PBXProject "Actividad TableView" */;
+			buildConfigurationList = A5DD8C36241166150076702A /* Build configuration list for PBXProject "Minireto1 MasterMind" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,57 +109,55 @@
 				en,
 				Base,
 			);
-			mainGroup = A5DD8C0E241148950076702A;
-			productRefGroup = A5DD8C18241148950076702A /* Products */;
+			mainGroup = A5DD8C32241166150076702A;
+			productRefGroup = A5DD8C3C241166160076702A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A5DD8C16241148950076702A /* Actividad TableView */,
+				A5DD8C3A241166150076702A /* Minireto1 MasterMind */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A5DD8C15241148950076702A /* Resources */ = {
+		A5DD8C39241166150076702A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5DD8C27241148970076702A /* LaunchScreen.storyboard in Resources */,
-				A5DD8C24241148970076702A /* Assets.xcassets in Resources */,
-				A5DD8C22241148950076702A /* Main.storyboard in Resources */,
+				A5DD8C4B241166180076702A /* LaunchScreen.storyboard in Resources */,
+				A5DD8C48241166180076702A /* Assets.xcassets in Resources */,
+				A5DD8C46241166160076702A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A5DD8C13241148950076702A /* Sources */ = {
+		A5DD8C37241166150076702A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5DD8C1F241148950076702A /* ViewController.swift in Sources */,
-				A5DD8C1B241148950076702A /* AppDelegate.swift in Sources */,
-				A5DD8C1D241148950076702A /* SceneDelegate.swift in Sources */,
-				A5DD8C2F241149240076702A /* TableViewController.swift in Sources */,
-				A5DD8C3124114C480076702A /* Jugador.swift in Sources */,
+				A5DD8C43241166160076702A /* ViewController.swift in Sources */,
+				A5DD8C3F241166160076702A /* AppDelegate.swift in Sources */,
+				A5DD8C41241166160076702A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A5DD8C20241148950076702A /* Main.storyboard */ = {
+		A5DD8C44241166160076702A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A5DD8C21241148950076702A /* Base */,
+				A5DD8C45241166160076702A /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		A5DD8C25241148970076702A /* LaunchScreen.storyboard */ = {
+		A5DD8C49241166180076702A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A5DD8C26241148970076702A /* Base */,
+				A5DD8C4A241166180076702A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -173,7 +165,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		A5DD8C29241148970076702A /* Debug */ = {
+		A5DD8C4D241166180076702A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -233,7 +225,7 @@
 			};
 			name = Debug;
 		};
-		A5DD8C2A241148970076702A /* Release */ = {
+		A5DD8C4E241166180076702A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -287,34 +279,34 @@
 			};
 			name = Release;
 		};
-		A5DD8C2C241148970076702A /* Debug */ = {
+		A5DD8C50241166180076702A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Actividad TableView/Info.plist";
+				INFOPLIST_FILE = "Minireto1 MasterMind/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ITESM.Actividad-TableView";
+				PRODUCT_BUNDLE_IDENTIFIER = "ITESM.Minireto1-MasterMind";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		A5DD8C2D241148970076702A /* Release */ = {
+		A5DD8C51241166180076702A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Actividad TableView/Info.plist";
+				INFOPLIST_FILE = "Minireto1 MasterMind/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ITESM.Actividad-TableView";
+				PRODUCT_BUNDLE_IDENTIFIER = "ITESM.Minireto1-MasterMind";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -324,25 +316,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A5DD8C12241148950076702A /* Build configuration list for PBXProject "Actividad TableView" */ = {
+		A5DD8C36241166150076702A /* Build configuration list for PBXProject "Minireto1 MasterMind" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A5DD8C29241148970076702A /* Debug */,
-				A5DD8C2A241148970076702A /* Release */,
+				A5DD8C4D241166180076702A /* Debug */,
+				A5DD8C4E241166180076702A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A5DD8C2B241148970076702A /* Build configuration list for PBXNativeTarget "Actividad TableView" */ = {
+		A5DD8C4F241166180076702A /* Build configuration list for PBXNativeTarget "Minireto1 MasterMind" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A5DD8C2C241148970076702A /* Debug */,
-				A5DD8C2D241148970076702A /* Release */,
+				A5DD8C50241166180076702A /* Debug */,
+				A5DD8C51241166180076702A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A5DD8C0F241148950076702A /* Project object */;
+	rootObject = A5DD8C33241166150076702A /* Project object */;
 }
