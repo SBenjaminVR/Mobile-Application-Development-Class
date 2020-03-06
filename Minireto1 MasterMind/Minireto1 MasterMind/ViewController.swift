@@ -2,12 +2,14 @@
 //  ViewController.swift
 //  Minireto1 MasterMind
 //
-//  Created by Fabiola Valdez on 3/5/20.
+//  Created by Benjamín Valdez on 3/5/20.
 //
 
 import UIKit
 
 class ViewController: UIViewController {
+    // MARK: - Outlets
+    
     @IBOutlet weak var imgRespuesta1: UIImageView!
     @IBOutlet weak var imgRespuesta2: UIImageView!
     @IBOutlet weak var imgRespuesta3: UIImageView!
@@ -25,6 +27,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var vistaVerde: UIView!
     
+    // MARK: - Variables
     
     let listaColores = ["blue", "green", "pink", "red", "yellow", "pistache"]
     var codigoColores = [0,1,2,3,4,5]
@@ -35,7 +38,37 @@ class ViewController: UIViewController {
     var coloresIA = [Int]()
     var intentos = 0
     
-    var frameSuperiorIzquierdo = UIImageView()
+    var historialIntentos = [[UIImageView]]()
+    var intento = [UIImageView]()
+    
+    // MARK: - Inicio del juego
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setBackground()
+        iniciarJuego()
+    }
+    
+    func setBackground() -> Void {
+         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+         backgroundImage.image = UIImage(named: "background.png")
+         backgroundImage.contentMode = UIView.ContentMode.scaleAspectFill
+         self.view.insertSubview(backgroundImage, at: 0)
+     }
+    
+    func iniciarJuego() -> Void {
+        segCtrlModo.selectedSegmentIndex = 0
+        cambiarModo(segCtrlModo)
+        intentos = 0
+        mostrarLabelIntentos()
+        ponerColoresAlAzar()
+        ponerBotonesAlAzar()
+        ponerCuadrosGrises()
+        borrarHistorial()
+        historialIntentos.removeAll()
+    }
+    
+    // MARK: - Poner valores iniciales
 
     func ponerColoresAlAzar() -> Void {
         codigoColores.shuffle()
@@ -47,20 +80,6 @@ class ViewController: UIViewController {
         for i in 0...3 {
             coloresIA.append(codigoColores[i])
         }
-    }
-    
-    func ponerCuadrosGrises() -> Void {
-        imgPista1.image = UIImage(named: listaGrises[2])
-        imgPista2.image = UIImage(named: listaGrises[2])
-        imgPista3.image = UIImage(named: listaGrises[2])
-        imgPista4.image = UIImage(named: listaGrises[2])
-    }
-    
-    func setBackground() -> Void {
-        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-        backgroundImage.image = UIImage(named: "background.png")
-        backgroundImage.contentMode = UIView.ContentMode.scaleAspectFill
-        self.view.insertSubview(backgroundImage, at: 0)
     }
     
     func ponerBotonesAlAzar() -> Void {
@@ -76,6 +95,15 @@ class ViewController: UIViewController {
         btnColor4.setBackgroundImage(UIImage(named: listaColores[codigoColores[2]]), for: .normal)
         coloresUser.append(codigoColores[2])
     }
+    
+    func ponerCuadrosGrises() -> Void {
+        imgPista1.image = UIImage(named: listaGrises[2])
+        imgPista2.image = UIImage(named: listaGrises[2])
+        imgPista3.image = UIImage(named: listaGrises[2])
+        imgPista4.image = UIImage(named: listaGrises[2])
+    }
+    
+    // MARK: - Funciones auxiliares
     
     func esconderRespuesta() -> Void {
         imgRespuesta1.isHidden = true
@@ -95,22 +123,11 @@ class ViewController: UIViewController {
         lbIntentos.text = "Intentos: " + String(intentos)
     }
     
-    func iniciarJuego() -> Void {
-        segCtrlModo.selectedSegmentIndex = 0
-        cambiarModo(segCtrlModo)
-        intentos = 0
-        mostrarLabelIntentos()
-        ponerColoresAlAzar()
-        ponerBotonesAlAzar()
-        ponerCuadrosGrises()
-        borrarHistorial()
-    }
-        
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        setBackground()
-        iniciarJuego()
-    }
+    // MARK: - Botones y cambio de modo
+    
+    @IBAction func presionarIniciar(_ sender: Any) {
+           iniciarJuego()
+       }
     
     @IBAction func buttonPressed(sender: UIButton) {
         if coloresUser[sender.tag] != 5 {
@@ -133,6 +150,8 @@ class ViewController: UIViewController {
         }
     }
     
+    // MARK: - Flujo del juego
+    
     func checarDuplicados() -> Bool {
         if coloresUser.count != Set(coloresUser).count {
             let alerta = UIAlertController(title: "Cuidado", message: "No puede haber dos o mas cuadros con el mismo color", preferredStyle: .alert)
@@ -143,7 +162,6 @@ class ViewController: UIViewController {
         }
         return true
     }
-    
     
     func checarColores() -> Void {
         for i in 0...3 {
@@ -204,6 +222,10 @@ class ViewController: UIViewController {
         }
     }
     
+   
+    
+    // MARK: - Historial de Intentos
+    
     func borrarHistorial() -> Void {
         let subViews = scrollView.subviews
         for subview in subViews{
@@ -214,54 +236,71 @@ class ViewController: UIViewController {
         scrollView.addSubview(vistaVerde)
         scrollView.contentSize = vistaVerde.frame.size
         
-        frameSuperiorIzquierdo = UIImageView(image: UIImage(named: "blue"))
-        frameSuperiorIzquierdo.frame = CGRect(x: 0, y: -66, width: 66, height: 66)
-        
-    }
-    
-    @IBAction func presionarIniciar(_ sender: Any) {
-        iniciarJuego()
     }
     
     func agregarIntentoHistorial() -> Void {
+        intento.removeAll()
+        borrarHistorial()
+        
         let primero = UIImageView(image: UIImage(named: listaColores[coloresUser[0]]))
-        primero.frame = CGRect(x: frameSuperiorIzquierdo.frame.origin.x, y: frameSuperiorIzquierdo.frame.origin.y + frameSuperiorIzquierdo.frame.height + 2, width: 66, height: 66)
+        primero.frame = CGRect(x: 0, y: -66, width: 66, height: 66)
         primero.tag = 100
         scrollView.addSubview(primero)
+        intento.append(primero)
         
         let segundo = UIImageView(image: UIImage(named: listaColores[coloresUser[1]]))
-        segundo.frame = CGRect(x: primero.frame.origin.x + (primero.frame.width) + 3.25, y: frameSuperiorIzquierdo.frame.origin.y + frameSuperiorIzquierdo.frame.height + 2, width: 66, height: 66)
+        segundo.frame = CGRect(x: primero.frame.origin.x + (primero.frame.width) + 3.25, y: -66, width: 66, height: 66)
+        segundo.tag = 100
+        scrollView.addSubview(segundo)
+        intento.append(segundo)
         
         let tercero = UIImageView(image: UIImage(named: listaColores[coloresUser[2]]))
-        tercero.frame = CGRect(x: segundo.frame.origin.x + (segundo.frame.width) + 3.25, y: frameSuperiorIzquierdo.frame.origin.y + frameSuperiorIzquierdo.frame.height + 2, width: 66, height: 66)
+        tercero.frame = CGRect(x: segundo.frame.origin.x + (segundo.frame.width) + 3.25, y: -66, width: 66, height: 66)
+        tercero.tag = 100
+        scrollView.addSubview(tercero)
+        intento.append(tercero)
+        
         let cuarto = UIImageView(image: UIImage(named: listaColores[coloresUser[3]]))
-        cuarto.frame = CGRect(x: tercero.frame.origin.x + (tercero.frame.width) + 3.25, y: frameSuperiorIzquierdo.frame.origin.y + frameSuperiorIzquierdo.frame.height + 2, width: 66, height: 66)
+        cuarto.frame = CGRect(x: tercero.frame.origin.x + (tercero.frame.width) + 3.25, y: -66, width: 66, height: 66)
+        cuarto.tag = 100
+        scrollView.addSubview(cuarto)
+        intento.append(cuarto)
+        
         let quinto = UIImageView(image: UIImage(named: listaGrises[correlacion[0]]))
-        quinto.frame = CGRect(x: cuarto.frame.origin.x + (cuarto.frame.width) + 3.25, y: frameSuperiorIzquierdo.frame.origin.y + frameSuperiorIzquierdo.frame.height + 2, width: 30, height: 30)
+        quinto.frame = CGRect(x: cuarto.frame.origin.x + (cuarto.frame.width) + 3.25, y: -66, width: 30, height: 30)
+        quinto.tag = 100
+        scrollView.addSubview(quinto)
+        intento.append(quinto)
+        
         let sexto = UIImageView(image: UIImage(named: listaGrises[correlacion[1]]))
-        sexto.frame = CGRect(x: quinto.frame.origin.x + (quinto.frame.width) + 3, y: frameSuperiorIzquierdo.frame.origin.y + frameSuperiorIzquierdo.frame.height + 2, width: 30, height: 30)
+        sexto.frame = CGRect(x: quinto.frame.origin.x + (quinto.frame.width) + 3, y: -66, width: 30, height: 30)
+        sexto.tag = 100
+        scrollView.addSubview(sexto)
+        intento.append(sexto)
+        
         let septimo = UIImageView(image: UIImage(named: listaGrises[correlacion[2]]))
         septimo.frame = CGRect(x: cuarto.frame.origin.x + (cuarto.frame.width) + 3.5, y: quinto.frame.origin.y + (quinto.frame.height) + 3, width: 30, height: 30)
+        septimo.tag = 100
+        scrollView.addSubview(septimo)
+        intento.append(septimo)
+        
         let octavo = UIImageView(image: UIImage(named: listaGrises[correlacion[3]]))
         octavo.frame = CGRect(x: septimo.frame.origin.x + (septimo.frame.width) + 3.5, y: sexto.frame.origin.y + (sexto.frame.height) + 3, width: 30, height: 30)
-        
-        segundo.tag = 100
-        tercero.tag = 100
-        cuarto.tag = 100
-        quinto.tag = 100
-        sexto.tag = 100
-        septimo.tag = 100
         octavo.tag = 100
-    
-        scrollView.addSubview(segundo)
-        scrollView.addSubview(tercero)
-        scrollView.addSubview(cuarto)
-        scrollView.addSubview(quinto)
-        scrollView.addSubview(sexto)
-        scrollView.addSubview(septimo)
         scrollView.addSubview(octavo)
-        
-        frameSuperiorIzquierdo = primero
+        intento.append(octavo)
+    
+        historialIntentos.append(intento)
+        moverIntentosHistorial()
+    }
+    
+    func moverIntentosHistorial() -> Void {
+        for item in historialIntentos.reversed() {
+            for element in item {
+                element.frame = CGRect(x: element.frame.origin.x, y: element.frame.origin.y + 68, width: element.frame.width, height: element.frame.height)
+                scrollView.addSubview(element)
+            }
+        }
     }
 
 }
