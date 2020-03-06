@@ -10,7 +10,7 @@
 		A5DD8C3F241166160076702A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DD8C3E241166160076702A /* AppDelegate.swift */; };
 		A5DD8C41241166160076702A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DD8C40241166160076702A /* SceneDelegate.swift */; };
 		A5DD8C43241166160076702A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DD8C42241166160076702A /* ViewController.swift */; };
-		A5DD8C46241166160076702A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5DD8C44241166160076702A /* Main.storyboard */; };
+		A5DD8C46241166160076702A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5DD8C44241166160076702A /* Main.storyboard */; settings = {ASSET_TAGS = (100, ); }; };
 		A5DD8C48241166180076702A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5DD8C47241166180076702A /* Assets.xcassets */; };
 		A5DD8C4B241166180076702A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5DD8C49241166180076702A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -93,6 +93,9 @@
 		A5DD8C33241166150076702A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					100,
+				);
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
 				TargetAttributes = {
